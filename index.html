@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .grey {
+            background-color: grey;
+            width: 100%;
+            height: 600px;
+        }
+        .yellow {
+            background-color: yellow;
+            width: 80%;
+            height: 600px;
+        }
+        .green {
+            align-items: center;
+            background-color: green;
+            width: 60%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grey" onclick="clickDiv('DIV 1')">
+        <p>DIV 1</p>
+        <div class="yellow" onclick="clickDiv('DIV 2')">
+                <p>DIV 2</p>
+            <div class="green" onclick="clickDiv('DIV 3')">
+                    <p>DIV 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function clickDiv(value)
+        {
+            alert(value)
+        }
+</script>
+</html>
