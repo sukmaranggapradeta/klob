@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 // import DataHome from '../src/asset/index.json'
 import { BrowserRouter as Router , Route, Switch } from 'react-router-dom'
 import Home from './layouts/Home'
-import Profile from './components/Profile'
+import Profile from './layouts/Profile'
 import profiledetail from './layouts/ProfileDetail'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route exact path="/profile/:profilename" component={ Profile } />
-          <Route exact path="/profile/detail/:profiledetail" component={ profiledetail } />
+          <Route exact path="/profile/:profilename/:profiledetail" component={ profiledetail } />
         </Switch>
       </Router>
     </div>

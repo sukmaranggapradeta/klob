@@ -7,7 +7,7 @@ export class Navbar extends Component {
             <>
                 <nav>
                     <div className="nav-wrapper">
-                        <img style={{ height: '45px', marginLeft: '10px', marginTop: '10px' }} src={KlobLogo} alt="logo" />
+                        <img style={{ height: '45px', marginLeft: '10px', marginTop: '1%' }} src={KlobLogo} alt="logo" />
                     </div>
                 </nav>                
             </>
